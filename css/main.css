@@ -2,7 +2,8 @@
   padding-top: 380px;
   position: relative;
   width: 100%;
-  float: left; }
+  float: left;
+  z-index: 1; }
   .sales h1, .sales h2, .sales .explanation, .sales .actions {
     text-align: center; }
   .sales .actions {
@@ -1608,6 +1609,7 @@ footer {
 .earn {
   padding-top: 240px;
   position: relative;
+  z-index: 3;
   width: 100%;
   float: left; }
   .earn .centered {
