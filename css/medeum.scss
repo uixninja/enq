@@ -1,0 +1,277 @@
+.medeum {
+    position: relative;
+    padding-top: 210px;
+    width: 100%;
+    float: left;
+
+    .centered {
+        overflow: visible;
+    }
+
+    .press {
+        float: right;
+        width: 330px;
+
+        h1 {
+            margin-left: -5px;
+        }
+
+        h3 {
+            float: left;
+            width: 100%;
+            text-transform: uppercase;
+            color: #ebedff;
+            font-size: 14px;
+            line-height: 110%;
+            padding-top: 45px;
+        }
+
+        .short_descr {
+            float: left;
+            width: 100%;
+            color: #b1b6eb;
+            font-size: 13px;
+            line-height: 170%;
+            padding-top: 28px;
+        }
+
+        .more {
+            float: left;
+            width: 100%;
+            padding-top: 30px;
+
+            a {
+                color: #4885ff;
+                font-size: 13px;
+                font-weight: 700;
+
+                img {
+                    vertical-align: middle;
+                    margin-left: 22px;
+                }
+
+                span {
+                    vertical-align: middle;
+                }
+
+                &:hover {
+                    span {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    .info {
+        padding-right: 425px;
+        position: relative;
+
+        .prev_slide {
+            position: absolute;
+            right: 100%;
+            cursor: pointer;
+            top: 0;
+            height: 100%;
+            width: 500px;
+            z-index: 100;
+        }
+
+        .bx-viewport {
+            overflow: visible !important;
+            clip-path: inset( -100vw 0 -100vw -100vw );
+        }
+
+        .bx-controls-direction {
+            display: none;
+        }
+
+        .headline {
+            float: left;
+            width: 100%;
+            padding-top: 20px;
+            padding-bottom: 100px;
+
+            .icon {
+                float: right;
+
+                img {
+                    float: left;
+                }
+            }
+
+            > span {
+                font-size: 15px;
+                color: #ebedff;
+                padding-right: 60px;
+                line-height: 49px;
+            }
+        }
+        .slide {
+            float: left;
+            width: 100%;
+            position: relative;
+        }
+
+        .carousel {
+            float: left;
+            width: 100%;
+            height: 353px;
+
+            .art_box {
+                &:last-child {
+                    margin-left: 24px;
+                }
+            }
+        }
+
+        .art_box {
+            @include size(343px, 353px);
+            box-sizing: border-box;
+            padding: 37px 30px 20px 40px;
+            background: #272e56;
+            border-radius: 15px;
+            @include box-shadow2(0px 6px 27px 5px rgba(27, 33, 62, 0.6), inset 0px 1px 2px 0px rgba(41, 49, 91, 1));
+            float: left;
+
+            > p {
+                float: left;
+                width: 100%;
+                font-size: 13px;
+                color: #8388c7;
+                font-family: "Poppins";
+                line-height: 170%;
+            }
+
+            >.icon {
+                float: left;
+                width: 100%;
+                padding-top: 30px;
+
+                img {
+                    float: left;
+                }
+            }
+
+            .type {
+                float: left;
+                width: 100%;
+                padding-bottom: 30px;
+
+                img {
+                    float: left;
+                }
+
+                .name {
+                    padding-left: 79px;
+                    
+                    > p {
+                        float: left;
+                        width: 100%;
+                        color: #ebedff;
+                        font-size: 14px;
+                        line-height: 110%;
+                        padding-top: 6px;
+                        font-weight: 700;
+                    }
+
+                    > div {
+                        float: left;
+                        width: 100%;
+                        color: #8388c7;
+                        font-size: 13px;
+                        line-height: 110%;
+                        padding-top: 12px;
+                        line-height: 110%;
+                        font-weight: 700;
+                        font-family: "Poppins";
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1160px) {
+    .medeum {
+        padding-top: 120px;
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .press {
+            width: 100%;
+            padding-bottom: 40px;
+        }
+
+        .info {
+            padding-right: 0;
+
+            .headline {
+                padding-bottom: 70px;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .medeum {
+        .info {
+            .art_box {
+                margin-right: 0;
+                margin-bottom: 24px;
+                height: auto;
+
+                &.bx-clone {
+                    display: none;
+                }
+            }
+
+            .slide {
+                margin-left: 10px;
+            }
+
+            .prev_slide {
+                display: none !important;
+            }
+
+            .bx-wrapper {
+                max-width: 360px !important;
+
+                .bx-viewport {
+                    width: 100% !important;
+                    height: auto !important;
+                    overflow: auto !important;
+
+                    .carousel {
+                        width: 100% !important;
+                        height: auto !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 430px) {
+    .medeum {
+        .info {
+            width: 280px;
+            margin: 0 auto;
+
+            .headline {
+                padding-bottom: 40px;
+            }
+
+            .slide {
+                margin-left: 0;
+            }
+
+            .art_box {
+                width: 280px !important;
+                @include box-shadow2(0px 6px 27px 5px rgba(27, 33, 62, 0.6), inset 0px 1px 2px 0px rgba(41, 49, 91, 1));
+            }
+        }
+    }
+}

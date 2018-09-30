@@ -1,0 +1,68 @@
+@mixin gradient($color_start, $color_end) {
+    background:  $color_start;
+    background: -moz-linear-gradient(left, $color_start, $color_end 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, $color_start), color-stop(100%, $color_end));
+    background: -webkit-linear-gradient(left, $color_start 0%, $color_end 100%);
+    background: -o-linear-gradient(left, $color_start 0%, $color_end 100%);
+    background: -ms-linear-gradient(left, $color_start 0%, $color_end 100%);
+    background: linear-gradient(to right, $color_start 0%, $color_end 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$color_start, endColorstr=$color_end, GradientType=1 );    
+}
+
+@mixin gradient-top($color_start, $color_end) {
+    background:  $color_start;
+    background: -moz-linear-gradient(top, $color_start, $color_end 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, $color_start), color-stop(100%, $color_end));
+    background: -webkit-linear-gradient(left, $color_start 0%, $color_end 100%);
+    background: -o-linear-gradient(left, $color_start 0%, $color_end 100%);
+    background: -ms-linear-gradient(left, $color_start 0%, $color_end 100%);
+    background: linear-gradient(to bottom, $color_start 0%, $color_end 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$color_start, endColorstr=$color_end, GradientType=1 );    
+}
+
+@mixin rotate($deg) {
+    -webkit-transform: rotate($deg);
+    -moz-transform: rotate($deg);
+    -ms-transform: rotate($deg);
+    -o-transform: rotate($deg);    
+}
+
+@mixin box-shadow($data) {
+    -webkit-box-shadow: $data;
+    -moz-box-shadow: $data;
+    box-shadow: $data;
+}
+
+@mixin box-shadow2($data1, $data2) {
+    -webkit-box-shadow: $data1, $data2;
+    -moz-box-shadow: $data1, $data2;
+    box-shadow: $data1, $data2;
+}
+
+@mixin zoom($zoom) {
+    zoom: $zoom;
+    -ms-zoom: $zoom;
+    -webkit-zoom: $zoom;
+    -moz-transform:  scale($zoom, $zoom);
+    -moz-transform-origin: center center;
+}
+
+@mixin transition($transition) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+
+@mixin transform($transforms) {
+    -moz-transform: $transforms;
+      -o-transform: $transforms;
+     -ms-transform: $transforms;
+ -webkit-transform: $transforms;
+       transform: $transforms;
+}
+
+@mixin  size($width, $height) {
+    width: $width;
+    height: $height;
+}

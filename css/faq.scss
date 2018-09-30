@@ -1,0 +1,101 @@
+.faq {
+    position: relative;
+    padding-top: 180px;
+    width: 100%;
+    float: left;
+
+    h1, h2 {
+        text-align: center;
+    }
+
+    .centered {
+        overflow: visible;
+        max-width: 960px;
+
+        .item {
+            width: 100%;
+            position: relative;
+            box-sizing: border-box;
+            padding: 0px 65px 0 40px;
+            margin-top: 40px;
+            border-radius: 22px;
+            transition: .3s all;
+            float: left;
+
+            &.active {
+                background: #252e59;
+                padding-top: 40px;
+                @include box-shadow2(0px 16px 40px 0px rgba(19, 32, 62, 0.43), inset 0px 1px 2px 0px rgba(39, 49, 94, 1));
+
+                .head {
+                    .ico {
+                        color: #3b74ff;
+                    }
+                }
+
+                .answer {
+                    display: block;
+                }
+            }
+
+            .answer {
+                padding-top: 30px;
+                color: #8288cc;
+                font-size: 15px;
+                line-height: 21px;
+                padding-bottom: 40px;
+                display: none;
+            }
+
+            .head {
+                height: 44px;
+
+                .ico {
+                    height: 44px;
+                    width: 44px;
+                    float: left;
+                    border-radius: 22px;
+                    background: #303d74;
+                    color: #7177b7;
+                    text-align: center;
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 44px;
+                    cursor: pointer;
+                }
+
+                h3 {
+                    padding-left: 88px;
+                    font-size: 15px;
+                    line-height: 130%;
+                    padding-top: 15px;
+                    color: #ebedff;
+                    font-weight: 500;
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 600px) {
+    .faq {
+        padding-top: 130px;
+    }
+}
+
+@media (max-width: 450px) {
+    .faq {
+        padding-top: 110px;
+
+        .centered {
+            .item {
+                .head {
+                    h3 {
+                        padding-left: 60px;
+                    }
+                }
+            }
+        }
+    }
+}

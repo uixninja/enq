@@ -1,0 +1,76 @@
+.mission {
+    position: relative;
+    padding-top: 200px;
+    width: 100%;
+    float: left;
+
+    .centered {
+        overflow: visible;
+    }
+
+    .text {
+        float: left;
+        width: 490px;
+        padding-top: 180px;
+    }
+
+    .picture {
+        width: 495px;
+        float: right;
+
+        img {
+            float: left;
+        }
+    }
+}
+
+@media (max-width: 1060px) {
+    .mission {
+        .picture {
+            width: 370px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .text {
+            padding-top: 160px;
+        }
+    }
+}
+
+@media (max-width: 940px) {
+    .mission {
+        .text {
+            padding-top: 140px;
+            width: 360px;
+        }
+    }
+}
+
+@media (max-width: 815px) {
+    .mission {
+        .text {
+            padding-top: 0;
+            width: 100%;
+            text-align: center;
+            padding-bottom: 40px;
+        }
+
+        .picture {
+            float: none;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .mission {
+        padding-top: 100px;
+        
+        .picture {
+            width: 100%;
+        }
+    }
+}

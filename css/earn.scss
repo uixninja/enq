@@ -1,0 +1,150 @@
+.earn {
+    padding-top: 240px;
+    position: relative;
+    width: 100%;
+    float: left;
+
+    .centered {
+        overflow: visible;
+    }
+
+    .text {
+        float: right;
+        width: 490px;
+        padding-top: 220px;
+
+        h1 {
+            margin-left: -5px;
+        }
+    }
+
+    &:before {
+        @include size(998px, 765px);
+        content: "";
+        right: 46%;
+        top: 265px;
+        background: url('../img/wave.png') no-repeat 0 0;
+        position: absolute;
+    }
+
+    .apps {
+        width: 650px;
+        float: left;
+
+        .left, .right {
+            top: 100% !important;
+            margin-top: 60px;
+        }
+
+        .left {
+            right: 50% !important;
+            left: auto !important;
+            margin-right: 20px;
+        }
+
+        .right {
+            left: 50% !important;
+            margin-left: 20px;
+        }
+        
+
+        ul {
+            left: 0 !important;
+            top: 0 !important;
+            margin: 0 !important;
+
+            li {
+                opacity: .4;
+                transition: .4s opacity;
+
+                &.active {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .actions {
+        .btn, .btn_color {
+            padding: 0 28px;
+
+            span, img {
+                vertical-align: middle;
+            }
+
+            img {
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1210px) {
+    .earn {
+        .apps {
+            width: 550px;
+        }
+
+        .text {
+            padding-top: 120px;
+            width: 450px;
+        }
+    }
+}
+
+@media (max-width: 1070px) {
+    .earn {
+        padding-top: 200px;
+
+        .apps {
+            @include zoom(0.7);
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .earn {
+        .text {
+            width: 350px;
+        }
+    }
+}
+
+@media (max-width: 815px) {
+    .earn {
+        padding-top: 0;
+
+        .text {
+            width: 100%;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+
+        .apps {
+            float: none;
+            width: 500px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            padding-bottom: 115px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .earn {
+        .text {
+            padding-top: 80px;
+        }
+
+        .actions {
+            .btn_color, .btn {
+                padding: 0 22px;
+            }
+        }
+
+        .apps {
+            @include zoom(0.55);
+        }
+    }
+}

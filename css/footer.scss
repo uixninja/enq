@@ -1,0 +1,64 @@
+footer {
+    position: relative; 
+    padding: 36px 0;
+    background: #2e3767;
+    border-top: 2px solid #313a6d;
+    margin-top: 230px;
+    width: 100%;
+    float: left;
+
+    .text {
+        width: 450px;
+        float: left;
+        color: #8388c7;
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+    .social {
+        width: 345px;
+        float: right;
+        text-align: right;
+        padding-top: 14px;
+
+        img {
+            margin-left: 24px;
+        }
+
+        a {
+            &:first-child {
+                img {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 845px) {
+    footer {
+        padding: 28px 0;
+        text-align: center;
+
+        .text {
+            width: 100%;
+            padding-top: 25px;
+        }
+        .social {
+            width: 100%;
+            text-align: center;
+            padding-top: 0;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    footer {
+        .social {
+            img {
+                height: 15px;
+                margin-left: 15px;
+            }
+        }
+    }
+}

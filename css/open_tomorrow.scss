@@ -1,0 +1,131 @@
+.open_tomorrow {
+    position: relative;
+    width: 100%;
+
+    .centered {
+        overflow: visible;
+    }
+
+    .left {
+        width: 460px;
+        float: left;
+
+        h1 {
+            padding-top: 165px;
+        }
+
+        .actions {
+            > a {
+                box-sizing: border-box;
+                width: 135px;
+                text-align: center;
+            }
+        }
+    }
+
+    .picture {
+        width: 575px;
+        float: right;
+
+        img {
+            float: left;
+            width: 100%;
+        }
+    }
+
+    .social {
+        font-size: 1px;
+        text-align: center;
+        padding-top: 150px;
+        width: 100%;
+        position: relative;
+        float: left;
+
+        img {
+            margin: 0 12px;
+        }
+    }
+}
+
+@media (max-width: 1110px) {
+    .open_tomorrow {
+        .picture {
+            width: 460px;
+        }
+
+        .left {
+            h1 {
+                padding-top: 140px;
+            }
+        }
+    }
+}
+
+@media (max-width: 980px) {
+    .open_tomorrow {
+        .picture {
+            width: 360px;
+        }
+
+        .left {
+            width: 390px;
+
+            h1 {
+                padding-top: 75px;
+            }
+        }
+    }
+}
+
+@media (max-width: 815px) {
+    .open_tomorrow {
+        .picture {
+            float: none;
+            margin: 0 auto;
+        }
+
+        .left {
+            width: 100%;
+            text-align: center;
+            padding-bottom: 30px;
+            
+            h1 {
+                padding-top: 75px;
+            }
+        }
+
+        .social {
+            padding-top: 30px;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .open_tomorrow {
+        .picture {
+            width: 280px;
+        }
+
+        .left {
+            h1 {
+                padding-top: 25px;
+            }
+
+            .actions {
+                > a {
+                    width: 120px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .open_tomorrow {
+        .social {
+            img {
+                margin: 0 8px;
+            }
+        }
+    }
+}
